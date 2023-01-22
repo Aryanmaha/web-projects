@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Application Form</title>
+	<link rel="stylesheet" type="text/css" href="form-validation.css">
+</head>
+<body>
+	<form name="contactForm" onsubmit="return validateForm()">
+		<h2> Application Form </h2>
+		<div class="row">
+			<label for="full_name"> Full Name </label>
+			<input type="text" id="full_name" name="full_name">
+			<div class="error" id="nameErr"></div>
+		</div>
+		<div class="row">
+			<label for="email"> Email </label>
+			<input type="text" id="email" name="email">
+			<div class="error" id="emailErr"></div>
+		</div>
+		<div class="row">
+			<label for="mobile"> Mobile Number </label>
+			<input type="text" id="mobile" name="mobile" maxlength="10">
+			<div class="error" id="mobileErr"></div>
+		</div>
+		<div class="row">
+			<label for="country"> Country </label>
+			<select name="country" id="country">
+				<option value=""> Select Country </option>
+				<option value="Australia"> Australia </option>
+				<option value="India"> India </option>
+				<option value="Nepal"> Nepal </option>
+			</select>
+			<div class="error" id="countryErr"></div>
+		</div>
+		<div class="row">
+			<label> Gender </label>
+			<div class="form-inline">
+				<input type="radio" name="gender" value="Male"><label for="male"> Male </label>
+				<input type="radio" name="gender" value="Female"><label for="female"> Female </label>
+			</div>
+			<div class="error" id="genderErr"></div>
+		</div>
+		<div class="row">
+			<label> Hobbies <i> (Optional) </i></label>
+			<div class="form-inline">
+				<input type="checkbox" name="hobbies[]" value="Sports"><label for="sports"> Sports </label>
+				<input type="checkbox" name="hobbies[]" value="Movies"><label for="movies"> Movies </label>
+				<input type="checkbox" name="hobbies[]" value="Programming"><label for="programming"> Programming </label>
+			</div>
+		</div>
+		<div class="row">
+			<input type="submit" value="Submit">
+		</div>
+		<div id="displayData"></div>
+	</form>
+
+	<script src="form-validation.js"></script>
+</body>
+</html>
