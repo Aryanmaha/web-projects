@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Bootstrap Practice </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/practice.css">
+	</head>
+	<body>
+		<nav id="main-navbar" class="navbar navbar-dark sticky-top navbar-expand-lg bg-dark">
+			<div class="container">
+				<a class="navbar-brand text-uppercase fw-bold" href="#"> Bootstrap Project </a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div id="navbarToggler" class="collapse navbar-collapse">
+					<ul class="navbar-nav fs-4 fw-bold ms-auto">
+						<li class="nav-item">
+							<a class="nav-link active" href="#home"> Home </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#portfolio"> Portfolio </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about"> About </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact"> Contact </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div data-bs-spy="scroll" data-bs-target="#main-navbar" data-bs-smooth-scroll="true">
+			<section id="home" class="text-white hero-section d-flex flex-column align-items-center justify-content-center">
+				<img src="images/avatar.svg">
+				<h1 class="text-uppercase mt-3"> Start Bootstrap </h1>
+				<div class="star-icon d-flex align-items-center justify-content-center"><i class="bi bi-star-fill"></i></div>
+				<p class="fs-4 fw-bold mt-4"> Graphic Artist - Web Designer - Illustrator </p>
+			</section>
+
+			<section class="container portfolio mt-5 mb-5" id="portfolio">
+				<h1 class="text-center fw-bolder"> Portfolio </h1>
+				<div class="star-icon star-icon-black d-flex align-items-center justify-content-center"><i class="bi bi-star-fill"></i></div>
+				<div class="row mt-0 gy-5">
+					<div class="col-12 col-lg-4 col-md-6 col-sm-12">
+						<img src="images/cabin.png">
+					</div>
+					<div class="col-12 col-lg-4 col-md-6 col-sm-12">
+						<img src="images/cake.png">
+					</div>
+					<div class="col-12 col-lg-4 col-md-6 col-sm-12">
+						<img src="images/circus.png">
+					</div>
+					<div class="col-12 col-lg-4 col-md-6 col-sm-12">
+						<img src="images/game.png">
+					</div>
+					<div class="col-12 col-lg-4 col-md-6 col-sm-12">
+						<img src="images/safe.png">
+					</div>
+					<div class="col-12 col-lg-4 col-md-6 col-sm-12">
+						<img src="images/submarine.png">
+					</div>
+				</div>
+			</section>
+
+			<section id="about" class="container-fluid about text-white pt-5">
+				<div class="container d-flex align-items-center justify-content-center flex-column">
+					<h1 class="text-center fw-bolder"> ABOUT </h1>
+					<div class="star-icon d-flex align-items-center justify-content-center"><i class="bi bi-star-fill"></i></div>
+					<div class="row m-auto fs-4 mt-4">
+						<div class="col-12 col-md-6">
+							<p>
+								Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
+							</p>
+						</div>
+						<div class="col-12 col-md-6">
+							<p>
+								You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
+							</p>
+						</div>
+					</div>
+					<a href="#" class="btn btn-lg btn-outline-light m-auto fw-bold fs-5 d-flex align-items-center justify-content-center"><i class="bi bi-download"></i> Free Download </a>
+				</div>
+			</section>
+
+			<section id="contact" class="contact container py-5">
+				<h1 class="text-center fw-bolder"> Contact </h1>
+				<div class="star-icon star-icon-black d-flex align-items-center justify-content-center"><i class="bi bi-star-fill"></i></div>
+				<form class="form m-auto mt-4">
+					<div class="form-floating mb-3">
+						<input type="text" class="form-control" id="full_name" placeholder="Full Name">
+						<label for="full_name"> Full Name </label>
+					</div>
+					<div class="form-floating mb-3">
+						<input type="email" class="form-control" id="email" placeholder="Email">
+						<label for="email"> Email </label>
+					</div>
+					<div class="form-floating mb-3">
+						<input type="phone_number" class="form-control" id="phone_number" placeholder="Phone Number">
+						<label for="phone_number"> Phone Number </label>
+					</div>
+					<div class="form-floating mb-3">
+						<textarea class="form-control" id="message" placeholder="Message" style="height:100px"></textarea>
+						<label for="message"> Message </label>
+					</div>
+					<button type="submit" class="btn btn-danger fw-bold disabled"> Send Message </button>
+				</form>
+			</section>
+		</div>
+
+		<footer class="container-fluid">
+			<div class="container row m-auto text-white text-center">
+				<div class="col">
+					<h3> LOCATION </h3>
+					<p>
+						55 Own Palace, Suburb State, 1234<br> At this address
+					</p>
+				</div>
+				<div class="col">
+					<h3> AROUND THE WEB </h3>
+					<div class="socials">
+						<a href="#"><i class="bi bi-facebook"></i></a>
+						<a href="#"><i class="bi bi-twitter"></i></a>
+						<a href="#"><i class="bi bi-linkedin"></i></a>
+					</div>
+				</div>
+				<div class="col">
+					<h3> ABOUT BOOTSTRAP </h3>
+					<p>
+						Freelance is a free to use, MIT licensed <br> Bootstrap theme created with love.
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<div class="footer-bottom text-white d-flex align-items-center justify-content-center">
+			Copyright &copy; Your Website 2022
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
