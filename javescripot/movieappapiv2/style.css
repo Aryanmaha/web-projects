@@ -1,0 +1,415 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  background-color: #181818;
+  color:white;
+}
+a{
+  text-decoration: none;
+  color:inherit;
+}
+/* header part starts here */
+.header{
+  background-color: #202020;
+  height: 10vh;
+  padding:1rem  10rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.header .left{
+  margin: auto 0px;
+}
+.header .left h2{
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+.header .left h2 span{
+  text-transform: uppercase;
+  color: #f5c518;
+}
+.header .right{
+  width: 30%;
+}
+.header .right ul{
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .right ul li{
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+.header .right ul li:hover{
+  color: rgba(255,255,255, 0.9);
+  transition: 0.3s ease-in-out;
+}
+/* header section ends here */
+/* styling for search bar and content  */
+.search{
+  height: 15vh;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search h2{
+  font-size: 2rem;
+  margin: 0 20px;
+}
+.search .search_bar{
+  width: 20vw;
+  height: 3rem;
+  padding: 15px;
+  background-color: #202020;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px 0 0 20px;
+}
+.search button{
+  height: 3rem;
+  width: 3rem;
+  background-color: #202020;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 0px 20px 20px 0px;
+  color: rgba(255, 255, 255, 0.5);
+}
+/* styling for search ends here */
+/* styling for displaying movie details */
+.search-placeholder{
+  display: flex;
+  flex-direction: column;
+}
+.search-content{
+  display: flex;
+}
+.search-list{
+  position:absolute;
+  width: 20vw;
+  margin-top: 3rem;
+  margin-left: 1rem;
+  max-height: 500px;
+  overflow-y: auto;
+  border-radius: 10px;
+  z-index:1;
+}
+.movie_card_search{
+  display: flex;
+  align-items: center;
+}
+.search-list-item{
+  background-color: #202020;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #181818;
+}
+.search-list-item:hover{
+  background-color: #181818;
+  transition: 0.5s ease-in-out;
+}
+.search-list-item img{
+  height: 100px;
+  width: 80px;
+}
+.search-item-info{
+  color:rgba(255, 255, 255, 0.5);
+  margin-left: 20px;
+}
+.search-item-info h3{
+  color: #f5c518;
+}
+.hide-search-list{
+    display: none;
+}
+/* styling for displaying movie details ends here */
+/* styling for main body aka: trending movies, discover and popular sections */
+.main_body{
+  background-image: linear-gradient(to bottom right, #202020, rgba(0, 0, 0, 0.9));
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+  color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+}
+
+
+.trending_movie_Card,.discover_movie_Card,.popular_movie_Card{
+  display: flex;
+  margin-left: 0px;
+  /* align-items: center; */
+
+  justify-content: space-between;
+  /* position: absolute; */
+  height: 450px;
+
+}
+.trending_movies{
+  position: relative;
+  overflow: hidden;
+}
+
+.trending_movie_Card{
+  padding-left:25px;
+  max-width: 1900px;
+  transform: translate(0px);
+}
+.prevbtn{
+  position: absolute;
+  z-index: 10;
+  font-size: 3rem;
+  top: 180px;
+  left: 0px;
+}
+.nextbtn{
+  position: absolute;
+  z-index: 1;
+  font-size: 3rem;
+  top: 180px;
+  right: 0px;
+}
+.prevbtn:hover, .nextbtn:hover{
+  color: rgba(255, 255, 255, 0.8);
+}
+.prevbtn_discover, .nextbtn_discover{
+  top: 900px;
+}
+.prevbtn_popular, .nextbtn_popular{
+  top: 1400px;
+}
+.movies_card{
+  margin-top: 2rem;
+  margin-right: 80px;
+  height: 350px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: visible;
+  position: relative;
+}
+.movies_card:hover img{
+  transform: scale(1.1);
+  transition: 0.5s ease-in;
+}
+.movies_card:hover .movie_card_details{
+  display: block;
+}
+.movies_card h3{
+  color: #f5c518;
+  font-size: 1.5rem;
+}
+.movie_card_details{
+  height: 300px;
+  width: 250px;
+  z-index: 1;
+  position: absolute;
+  background-image: linear-gradient(to bottom right, #202020, rgba(0, 0, 0, 1));
+  left:150px;
+  top:100px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  padding: 20px 10px;
+  display: none;
+}
+.movie_card_details h3{
+  color: #f5c518;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.movie_card_details h2{
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+.movie_card_details h2 span{
+  font-weight: bold;
+  color: rgba(245, 197, 24, 0.8);
+}
+.movie_card_details span{
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+.movie_card_details span span{
+  font-weight: bold;
+  color: rgba(245, 197, 24, 0.8);
+}
+.movie_card_details h4{
+  margin-bottom: 5px;
+}
+.movie_card_details h4 span{
+  background-color: #f5c518;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 3px;
+  margin-right: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.movie_card_details p{
+  font-size: 0.9rem;
+}
+.movie_card_details p span{
+  font-weight: bold;
+  color: rgba(245, 197, 24, 0.8);
+}
+
+.movies_card img{
+  height: 300px;
+  width: 225px;
+  margin-bottom: 20px;
+}
+/* main body movie card ends  */
+/* styling for the scrollbar */
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 5px #000000;
+  background: rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-thumb{
+  background: rgba(245, 197, 24, 0.8);
+  border-radius: 5px;
+}
+/* stlying for scrollbar ends */
+/* popup_Container styling starts here */
+.pop-up_container{
+  position: fixed;
+  top: 0;
+  background-image: linear-gradient(to bottom right, #202020, rgba(0, 0, 0, 0.9));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.1);
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+  z-index: 1;
+}
+ .show{
+   visibility: visible;
+   transform: scale(1);
+   transition: 0.2s ease-in;
+ }
+
+/* close section of popup */
+.close_popup{
+  position: absolute;
+  top: 80px;
+  right: 100px;
+  background-color: inherit;
+  border: none;
+  font-size: 2.5rem;
+  color:  rgba(255, 255, 255, 0.6);
+}
+.close_popup:hover{
+  color:  rgba(255, 255, 255, 0.8);
+}
+/* close section ends of popup */
+
+.movie_details{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pop-up_container .left{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10rem;
+  align-items: center;
+}
+.pop-up_container .poster{
+  height: 500px;
+  width: 400px;
+  border: 4px solid white;
+}
+
+.pop-up_container .right{
+  width: 50%;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+.right .movie_title{
+  font-size: 2.5rem;
+  color: #f5c518;
+  font-weight: bold;
+}
+.right .second_line{
+  display: flex;
+  align-items: center;
+  margin: 10px 0 10px 0px;
+}
+.right .movie_pg_rating{
+  background-color: #f5c518;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bolder;
+  padding: 4px;
+  margin: 0 0 0 10px;
+  border-radius: 5px;
+}
+.movie_genre, .movie_runtime,.movie_director,.movie_writer,.movie_actors{
+  margin: 0 0 10px 0px;
+}
+.movie_sypnosis{
+  margin: 0 0 10px 0px;
+  width: 70%;
+}
+.movie_langauge{
+  font-style: italic;
+  font-weight: lighter;
+  color: #f5c518;
+  margin: 0 0 10px 0px;
+}
+/* styling for add to watchlist button */
+.click_watchlist{
+  background-color: #f5c518;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.9);
+  padding: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.click_watchlist:hover{
+  background-color: rgba(245, 197, 24, 0.8);
+}
+/* styling for remove watchlist button */
+.remove_Watchlist{
+  background-color: rgba(255,43,2, 0.9);
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.9);
+  padding: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.remove_Watchlist:hover{
+  background-color: rgba(255, 43, 2, 0.7);
+}
+/* pop-up container ends here  */

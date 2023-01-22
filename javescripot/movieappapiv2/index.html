@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MovieHOOD- homepage </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="left">
+        <h2>Movie<span>HOOD</span></h2>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Movies</a></li>
+          <li>TV shows</li>
+          <li><a href="watchlist.html">Watchlist</a></li>
+          <li>login </li>
+        </ul>
+      </div>
+    </div>
+    <div class="search">
+      <h2>Search for your movies:</h2>
+      <div class="search-placeholder">
+        <div class="search-content">
+      <input type="text" class = "search_bar" placeholder="Search movies..." autofocus onkeyup="findMovies()" onclick="findMovies()">
+      <button> <i class="fa fa-search" aria-hidden="true"></i></button>
+    </div>
+    <div class="search-list" id="search-list">
+      <!-- <div class="search-list-item">
+        <div class = "search-item-thumbnail">
+          <img src="poster.jpg">
+        </div>
+        <div class="search-item-info">
+          <h3>Blade runner 2049</h3>
+          <p>2015/25/12</p>
+      </div>
+    </div> -->
+
+  </div>
+</div>
+</div>
+  <div class="main_body">
+    <div class="trending_movies">
+      <h2>Trending movies:</h2>
+      <div class="prevbtn prevbtn_trending"><i class="fa-solid fa-angle-left"></i></div>
+      <div class="nextbtn nextbtn_trending"><i class="fa-solid fa-angle-right"></i></div>
+
+      <div class="trending_movie_Card">
+              </div>
+    </div>
+    <div class="Discover_movies">
+      <h2>Discover movies:</h2>
+      <div class="prevbtn prevbtn_discover"><i class="fa-solid fa-angle-left"></i></div>
+      <div class="nextbtn nextbtn_discover"><i class="fa-solid fa-angle-right"></i></div>
+      <div class="discover_movie_Card">
+       </div>
+    </div>
+    <div class="popular_movies">
+      <h2>Popular movies:</h2>
+       <div class="prevbtn prevbtn_popular"><i class="fa-solid fa-angle-left"></i></div>
+      <div class="nextbtn nextbtn_popular"><i class="fa-solid fa-angle-right"></i></div>
+      <div class="popular_movie_Card">
+       </div>
+    </div>
+  </div>
+  <div class="pop-up_container" id = "popup">
+    <button class="close_popup"><i class="fa-solid fa-xmark"></i></button>
+    <div class="movie_details">
+      <div class="left">
+        <img src="" class="poster1">
+      </div>
+      <div class="right">
+        <div class="movie_title">loading.....</div>
+        <div class = "second_line">
+        <div class="movie_release_year">loading..... </div>
+      </div>
+        <div class="movie_genre">loading.....</div>
+        <div class="movie_runtime">loading.....</div>
+        <div class="movie_sypnosis">loading.....</div>
+        <div class="movie_langauge">loading.....</div>
+        <div class="movie_revenue">loading.....</div>
+        <button class="click_watchlist">Click to add to your watchlist <span><i class="fa-solid fa-bookmark"></i></span></button><br>
+        <button class="remove_Watchlist">Remove from your watchlist <span><i class="fa-solid fa-bookmark"></i></span></button>
+      </div>
+  </div>
+  </div>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
