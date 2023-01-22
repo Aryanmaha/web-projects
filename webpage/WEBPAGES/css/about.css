@@ -1,0 +1,18 @@
+.about-us-box {
+    margin-top: 100px;
+    padding: 0;
+    display: flex;
+    margin-bottom: 160vh;
+    margin-left: 25px;
+  }
+  
+  .about-01, .about-02{
+    display: block;
+    text-align: justify;
+  }
+  
+  .about-01 h1, h3{
+    text-align: center;
+  }
+  
+  

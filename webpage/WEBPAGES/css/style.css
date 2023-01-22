@@ -1,0 +1,31 @@
+*{
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+  }
+
+.home-welcome h1 {
+    box-sizing: border-box;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.home-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.home-welcome .btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #106914 ;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.home-welcome .btn:hover{
+  background: #024712;
+}

@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.hero{
+  height: 60%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  margin: 0 px;
+}
+ .form-box{
+   width: 600px;
+   height: 550px;
+   position: flex;
+   margin: 0% auto;
+   background: white;
+   padding: 5px;
+ }
+
+.form-box h1{
+  padding: 30px;
+  text-align: center;
+
+}
+
+.input-group{
+  text-align: center;
+}
+
+.social-icons{
+  margin: 50px auto;
+  text-align: center;
+
+}
+
+.social-icons a{
+  text-decoration: none;
+  color: #106914;
+  font-size: 18px;
+
+}

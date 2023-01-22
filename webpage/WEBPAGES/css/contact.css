@@ -1,0 +1,47 @@
+.contact-box {
+    width: 700px;
+    height: auto;
+    top: 20%;
+    left: 30%;
+    box-shadow: 0 0 20px 0 #999;
+    position: relative;
+}
+
+form{
+    display: table;
+    margin: auto;
+    padding: 0;
+    position: relative;
+}
+
+.input-field{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+    display: flex;
+}
+
+.textarea-field{
+    height: 150px;
+    padding-top: 10px;
+}
+
+.btn {
+    border-radius: 14px;
+    color: #fff;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #47c35a;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-box h1{
+    text-align: center;
+}
