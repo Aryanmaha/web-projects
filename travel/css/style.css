@@ -1,0 +1,130 @@
+.slide{
+	max-height: 600px;
+}
+
+.place h2{
+	text-transform: uppercase;
+	font-size: 4rem;
+	color: #fff;
+
+}
+
+.place p{
+	padding: 0 50px;
+	/*transform: scale(0, 2);*/
+}
+
+.nat{
+	text-decoration: none;
+}
+
+.bl p{
+	font-size: 17px
+}
+
+.back{
+	object-fit: cover;
+	background-size: cover;
+	background-position: center; center;
+}
+
+.back img{
+	border-radius: 5px;
+}
+
+.back .explor{
+	position: absolute;
+	bottom: 90px;
+	left: 100px;
+	color: #fff;
+}
+
+.small{
+	font-size: 14px;
+}
+
+.nav-item .nav-link{
+	/*font-weight: bold;*/
+	font-size: 18px;
+}
+.log{
+	background-image: url('../image/login.webp');
+	background-size: cover;
+	object-fit: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 450px;
+}
+
+.reg{
+	background-image: url('../image/login.webp');
+	background-size: cover;
+	object-fit: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 100%;
+}
+
+.welcome {
+	position: absolute;
+	top: 60px;
+	left: 33px;
+	padding: 50px;
+}
+
+.lg span .far{
+	font-size: 8rem;
+}
+
+
+.em input{
+	outline: none;
+	border: none;
+	touch-action: manipulation;
+}
+
+.con{
+	background: -webkit-linear-gradient(right,#21d4fd,#21d4fd,#b721ff);
+	z-index: -1;
+	transition: all .4s;
+}
+
+.sg {
+	position: absolute;
+	top: 200px;
+	left: 21px;
+	padding: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
