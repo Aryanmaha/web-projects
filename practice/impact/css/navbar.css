@@ -1,0 +1,49 @@
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.nav1{
+  background-color: #00796b;
+  height: 4vh;
+  padding: 0px;
+}
+.nav1_h1-a{
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 15px;
+  font-weight: normal;
+}
+.nav1_h1-a:hover{
+  text-decoration: underline !important;
+  color: #fff;
+}
+.nav1_ul_li-a{
+  margin-left: 20px;
+}
+.nav2{
+  background-color: #008374;
+  height: 8vh;
+  padding: 0px;
+}
+.nav2_a{
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.nav2_a span{
+  color: #f96f59;
+}
+.nav2_ul_li{
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.nav2_ul_li:hover{
+  border-bottom: 3px solid #f96f59;
+}
+.nav2_ul_li:active{
+  border-bottom: 3px solid #f96f59;
+}
